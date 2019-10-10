@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<LinearLayout android:orientation="vertical" android:gravity="center" android:layout_height="match_parent" android:layout_width="match_parent" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <androidx.cardview.widget.CardView android:layout_height="wrap_content" android:layout_width="390dp">
+        <LinearLayout android:orientation="vertical" android:gravity="center_horizontal" android:layout_height="match_parent" android:layout_width="match_parent">
+
+            <Space android:layout_height="20dp" android:layout_width="wrap_content"/>
+
+
+            <LinearLayout android:orientation="horizontal" android:gravity="center" android:layout_height="wrap_content" android:layout_width="match_parent">
+
+                <ImageView
+                    android:id="@+id/imageView11"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    app:srcCompat="@drawable/information" />
+
+                <Space android:layout_height="wrap_content" android:layout_width="10dp"/>
+
+                <TextView
+                    android:id="@+id/tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/font_main"
+                    android:text="종료"
+                    android:textColor="@android:color/black"
+                    android:textSize="24sp" />
+
+            </LinearLayout>
+
+            <Space android:layout_height="40dp" android:layout_width="wrap_content"/>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_view"
+                android:layout_width="310dp"
+                android:layout_height="225dp"
+                android:layout_margin="16dp"
+                android:visibility="visible"
+                app:cardCornerRadius="6dp">
+
+                <com.smarteist.autoimageslider.SliderView
+                    android:id="@+id/imgs"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:visibility="visible"
+                    app:sliderAnimationDuration="600"
+                    app:sliderAutoCycleDirection="back_and_forth"
+                    app:sliderAutoCycleEnabled="true"
+                    app:sliderCircularHandlerEnabled="true"
+                    app:sliderIndicatorAnimationDuration="600"
+                    app:sliderIndicatorGravity="center_horizontal|bottom"
+                    app:sliderIndicatorMargin="10dp"
+                    app:sliderIndicatorOrientation="horizontal"
+                    app:sliderIndicatorPadding="3dp"
+                    app:sliderIndicatorRadius="2dp"
+                    app:sliderIndicatorSelectedColor="#5A5A5A"
+                    app:sliderIndicatorUnselectedColor="#FFF"
+                    app:sliderScrollTimeInSec="1"
+                    app:sliderStartAutoCycle="true" />
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="340dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font_main"
+                android:gravity="center"
+                android:text="해당 앱을 통하여 유가족 분들과 어플리케이션 이용자 분들 모두 이 분들을 꼭 기억해주시고 ,\n\n다시는 이런 일이 반복되지 않도록 힘 써주세요."
+                android:textColor="@android:color/black"
+                android:textSize="17sp" />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="30dp" />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <Space android:layout_height="20dp" android:layout_width="wrap_content"/>
+
+    <Button
+        android:id="@+id/ok"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:background="@color/common_google_signin_btn_text_light_pressed"
+        android:fontFamily="@font/font_main"
+        android:text="종료"
+        android:textColor="@android:color/white" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="20dp" />
+
+    <Button
+        android:id="@+id/not"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:background="@color/common_google_signin_btn_text_light_pressed"
+        android:fontFamily="@font/font_main"
+        android:text="닫기"
+        android:textColor="@android:color/white" />
+
+</LinearLayout>

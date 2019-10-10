@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Write_0416.WriteActivity">
+
+    <ImageView
+        android:id="@+id/bgs"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/write_ground"
+        android:orientation="vertical">
+
+    </ImageView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_background"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"><![CDATA[>
+
+            ]]>
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font_main"
+                android:text="이 시간 만큼은 진지하게"
+                android:textColor="@android:color/white"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font_main"
+                android:text="모두 한번 씩 적어주세요. 어린 영혼들이 위로 되도록.."
+                android:textColor="@android:color/white"
+                android:textSize="18sp" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+
+            <LinearLayout
+                android:layout_width="425dp"
+                android:layout_height="425dp"
+                android:background="@drawable/memo_yellow"
+                android:gravity="center"
+                android:orientation="vertical">
+
+
+                <RelativeLayout
+                    android:layout_width="325dp"
+                    android:layout_height="325dp">
+
+                    <EditText
+                        android:id="@+id/ed_cheer"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="15dp"
+                        android:background="@drawable/board"
+                        android:fontFamily="@font/font_main"
+                        android:gravity="center"
+                        android:hint="천개의 바람이 된 단원고 학생들을 위해서.."
+                        android:paddingLeft="5dp"
+                        android:singleLine="false"
+                        android:textColor="@android:color/black"
+                        android:textCursorDrawable="@color/yellow_"
+                        android:textSize="14sp" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="7dp"
+                        android:background="@color/color_background"
+                        android:fontFamily="@font/font_main"
+                        android:text="위로의 한마디를 적어주세요."
+                        android:textColor="@android:color/white" />
+                </RelativeLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="bottom|right"
+            android:orientation="vertical">
+
+            <com.github.clans.fab.FloatingActionMenu
+                android:id="@+id/material_design_android_floating_action_menu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="11dp"
+                android:layout_marginRight="11dp"
+                android:layout_marginBottom="11dp"
+                fab:menu_animationDelayPerItem="55"
+                fab:menu_backgroundColor="@android:color/transparent"
+                fab:menu_buttonSpacing="0dp"
+                fab:menu_colorNormal="@android:color/system_notification_accent_color"
+                fab:menu_colorPressed="@android:color/white"
+                fab:menu_colorRipple="#99d4d4d4"
+                fab:menu_fab_label="메뉴"
+                fab:menu_fab_size="normal"
+                fab:menu_labels_colorNormal="#333"
+                fab:menu_labels_colorPressed="#444"
+                fab:menu_labels_colorRipple="#66efecec"
+                fab:menu_labels_cornerRadius="3dp"
+                fab:menu_labels_ellipsize="none"
+                fab:menu_labels_hideAnimation="@anim/fab_slide_out_to_right"
+                fab:menu_labels_margin="0dp"
+                fab:menu_labels_maxLines="-1"
+                fab:menu_labels_padding="8dp"
+                fab:menu_labels_position="left"
+                fab:menu_labels_showAnimation="@anim/fab_slide_in_from_right"
+                fab:menu_labels_showShadow="true"
+                fab:menu_labels_singleLine="false"
+                fab:menu_labels_textColor="#f2f1f1"
+                fab:menu_labels_textSize="15sp"
+                fab:menu_openDirection="up">
+
+                <com.github.clans.fab.FloatingActionButton
+                    android:id="@+id/material_design_floating_action_menu_item2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ribbon_yellow"
+                    fab:fab_colorNormal="@android:color/white"
+                    fab:fab_colorPressed="@color/yellow_"
+                    fab:fab_label="다른분들의 위로 읽어보기 .."
+                    fab:fab_size="mini" />
+
+                <com.github.clans.fab.FloatingActionButton
+                    android:id="@+id/material_design_floating_action_menu_item1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/send_memo"
+                    fab:fab_colorNormal="@android:color/white"
+                    fab:fab_colorPressed="@color/yellow_"
+                    fab:fab_label="바다 위로 띄우기 .."
+                    fab:fab_size="mini" />
+
+            </com.github.clans.fab.FloatingActionMenu>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
